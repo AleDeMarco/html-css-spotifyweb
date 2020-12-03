@@ -13,20 +13,31 @@
   <div class="container">
     <main>
       <section class="main-nav">
-        <div class="nav-logo blu">
+        <div class="nav-logo">
           <img src="img/logo.svg" alt="Logo Spotify">
         </div>
-        <div class="nav-page violet">
+        <div class="nav-page">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cerca</a></li>
-            <li><a href="#">La tua libreria</a></li>
+            <li class="special-li">
+              <img class="special-ico" src="img/home.svg" alt="Home">
+              <a class="special middle" href="#">Home</a>
+            </li>
+            <li>
+              <img src="img/search.svg" alt="Cerca">
+              <a class="middle" href="#">Cerca</a>
+            </li>
+            <li>
+              <img src="img/libreria.svg" alt="Libreria">
+              <a class="middle" href="#">La tua libreria</a>
+            </li>
           </ul>
         </div>
-        <div class="main-playlist red">
-          <strong>PLAYLIST</strong>
-          <ul>
-            <li><a href="#">Crea Playlist</a></li>
+        <div class="main-playlist">
+          <h2>Playlist</h2>
+          <div class="new-playlist">
+            <a href="#"><span>Crea Playlist</span></a>
+          </div>
+          <ul class="scrollable">
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
@@ -36,12 +47,15 @@
             <li><a href="#">Nome Playlist</a></li>
           </ul>
         </div>
-        <div class="nav-bottom violet">
-          <a href="#">link</a>
+        <div class="nav-bottom">
+          <div class="app">
+            <img src="img/download.svg" alt="Download">
+            <a class="middle" href="#">Installa app</a>
+          </div>
           <hr>
           <div class="profile">
-            <img src="" alt="">
-            <strong>John Doe</strong>
+            <img src="img/profile.svg" alt="Profilo">
+            <strong class="middle">John Doe</strong>
           </div>
         </div>
       </section>
