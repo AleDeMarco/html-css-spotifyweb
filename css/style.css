@@ -77,6 +77,11 @@ main {
   padding: 15px;
 }
 
+.nav-logo-sx{
+  display: none;
+  padding: 10px;
+}
+
 .nav-page{
   padding: 5px 0;
 }
@@ -102,6 +107,22 @@ main {
 
 .nav-page .special-li{
   border-left: 3px solid #adff2f;
+}
+
+.nav-page-sx{
+  display: none;
+}
+
+.nav-page-sx img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px auto;
+  opacity: 0.5;
+}
+
+.nav-page-sx img.special-ico{
+  opacity: 1;
 }
 
 .main-playlist{
@@ -153,6 +174,27 @@ main {
   padding: 5px 15px;
 }
 
+.nav-bottom-sx{
+  display: none;
+}
+
+.nav-bottom-sx img:first-of-type{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 5px auto;
+}
+
+.nav-bottom-sx img:last-of-type{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px auto;
+  padding: 3px;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
 .app:hover img{
   opacity: 1;
 }
@@ -201,6 +243,7 @@ main {
   padding: 35px 0;
   line-height: 20px;
 }
+
 .top-bar .btn {
   padding: 5px 10px;
   border-radius: 20px;
@@ -567,6 +610,37 @@ footer .foot-right{
 
 @media screen and (max-width:767px) {
 
+  .main-nav{
+    width: 50px;
+  }
 
+  .nav-logo,
+  .nav-page,
+  .main-playlist,
+  .main-scroll,
+  .nav-bottom{
+    display: none;
+  }
+
+  .nav-logo-sx,
+  .nav-page-sx,
+  .nav-bottom-sx{
+    display: block;
+  }
+
+  .top-bar {
+    width: calc(100% - 50px);
+  }
+
+  .main-content {
+    width: calc(100% - 50px);
+  }
+
+  #recently .song-list li,
+  #created .song-list li,
+  #artist .song-list li{
+    margin-right: 10px;
+    width: calc(100% / 2 - 10px);
+  }
 
 }
