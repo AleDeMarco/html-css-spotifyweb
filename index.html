@@ -13,6 +13,7 @@
 <body>
   <div class="container">
     <main>
+      <!-- LEFT NAV -->
       <section class="main-nav">
         <div class="nav-logo">
           <img src="img/logo.svg" alt="Logo Spotify">
@@ -50,7 +51,6 @@
             <li><a href="#">Nome Playlist</a></li>
           </ul>
         </div>
-
         <div class="nav-bottom">
           <div class="app">
             <img src="img/download.svg" alt="Download">
@@ -63,10 +63,13 @@
           </div>
         </div>
       </section>
+      <!-- CONTENT -->
       <section class="main-content">
+        <!-- CALL TO ACTION BAR -->
         <div class="top-bar">
           <a href="#" class="btn">Effettua l'upgrade</a>
         </div>
+        <!-- MAIN MENU -->
         <div class="nav-top">
           <ul>
             <li class="special"><a href="#">In evidenza</a></li>
@@ -77,106 +80,141 @@
             <li><a href="#">Scopri</a></li>
           </ul>
         </div>
+        <!-- RECENTLY PLAYED -->
         <section id="recently">
           <div class="section-title">Recently played</div>
           <ul class="song-list">
             <li>
               <div class="song">
-                <img src="img/metal_lifting.jpg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/metal_lifting.jpg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Heavy Metal</div>
                 <div class="singer center">Subtitle</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/stranger.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/stranger.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Stranger Things</div>
                 <div class="singer center">Kyle Dixon</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/aquietplace.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/aquietplace.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">A quiet place</div>
                 <div class="singer center">Subtitle</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/split.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/split.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Split</div>
                 <div class="singer center">Subtitle</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/cure.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/cure.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">A cure for wellness</div>
                 <div class="singer center">Subtitle</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/sinister.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/sinister.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Sinister</div>
                 <div class="singer center">Subtitle</div>
               </div>
             </li>
           </ul>
         </section>
+        <!-- CREATED FOR -->
         <section id="created">
           <div class="section-title">Created for John Doe</div>
           <div class="singer">Più ascolti, più accurati saranno i suggerimenti</div>
           <ul class="song-list">
             <li>
               <div class="song">
-                <img src="img/radar.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/radar.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Release radar</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/mixdaily.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/mixdaily.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Daily mix 1</div>
               </div>
             </li>
           </ul>
         </section>
+        <!-- ARTIST -->
         <section id="artist">
           <div class="section-title">Artisti più popolari</div>
           <div class="singer">Più ascolti, più accurati saranno i suggerimenti</div>
           <ul class="song-list">
             <li>
               <div class="song">
-                <img src="img/youg.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/youg.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Lana del rey</div>
               </div>
             </li>
             <li>
               <div class="song">
-                <img src="img/einaudi.jpeg" alt="Song cover">
+                <div class="img-play">
+                  <img src="img/einaudi.jpeg" alt="Song cover">
+                  <i class="far fa-play-circle"></i>
+                </div>
                 <div class="song-name center">Ludovico Einaudi</div>
               </div>
             </li>
           </ul>
         </section>
       </section>
-
     </main>
+    <!-- NOW PLAYING -->
     <footer>
+      <!-- LEFT SIDE -->
       <div class="foot-left">
         <div class="cover">
           <img src="img/sinister.jpeg" alt="Album">
         </div>
         <div class="title">
           <a href="#"><strong>Sinister</strong></a>
-          <a href="#"><div class="name">Brano Nome</div></a>
+          <a class="name" href="#">Brano Nome</a>
         </div>
         <div class="ico">
           <a href="#"><i class="far fa-heart"></i></a>
           <a href="#"><i class="far fa-folder"></i></a>
         </div>
       </div>
+      <!-- CENTER CONTROLLER -->
       <div class="foot-center">
         <div class="button">
           <ul>
@@ -196,6 +234,7 @@
           <div class="total-time">4:35</div>
         </div>
       </div>
+      <!-- RIGHT SIDE -->
       <div class="foot-right">
         <i class="fas fa-list-ul"></i>
         <i class="fas fa-desktop"></i>

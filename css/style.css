@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -246,7 +247,7 @@ main {
   font-weight: bold;
 }
 
-/* RECENTLY PLAYED - CREATED FOR */
+/* RECENTLY PLAYED - CREATED FOR - ARTIST */
 #recently,
 #created,
 #artist{
@@ -284,6 +285,34 @@ main {
   border-radius: 50%
 }
 
+.img-play{
+  position: relative;
+}
+
+#recently .song:hover img,
+#created .song:hover img,
+#artist .song:hover img{
+  opacity: 0.3;
+}
+
+#recently .song .img-play i,
+#created .song .img-play i,
+#artist .song .img-play i{
+  color: transparent;
+  font-size: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#recently .song:hover .img-play i,
+#created .song:hover .img-play i,
+#artist .song:hover .img-play i{
+  color: white;
+}
+
 .song-name{
   font-size: 16px;
   color: white;
@@ -319,6 +348,16 @@ footer .foot-left{
   height: 100%;
 }
 
+.foot-left a i:hover{
+  color: white;
+}
+
+.foot-left a:hover,
+.foot-left a.name:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 .foot-left .cover img{
   width: 100%;
   transform: translateY(22px);
@@ -331,9 +370,6 @@ footer .foot-left{
 .foot-left .title .name{
   font-size: 10px;
   color: #a3a3a3;
-}
-
-.foot-left .ico{
 }
 
 .foot-left .ico i{
@@ -419,6 +455,23 @@ footer .foot-center{
   left: 0;
 }
 
+.bar .now-bar:hover{
+  border: 3px solid #adff2f;
+}
+
+.bar .now-bar:hover::after{
+  font-family: "Font Awesome 5 Free";
+   content: "\f111";
+   vertical-align: middle;
+   font-weight: 900;
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(50%, -50%);
+}
+
 footer .foot-right{
   height: 100%;
   width: 230px;
@@ -459,6 +512,23 @@ footer .foot-right{
   width: 50%;
   border: 3px solid white;
   border-radius: 5px;
+}
+
+.audio .audio-bar .audio-now:hover{
+  border: 3px solid #adff2f;
+}
+
+.audio .audio-bar .audio-now:hover::after{
+  font-family: "Font Awesome 5 Free";
+   content: "\f111";
+   vertical-align: middle;
+   font-weight: 900;
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(50%, -50%);
 }
 
 /* MEDIA QUERIES */
