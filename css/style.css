@@ -210,6 +210,11 @@ main {
   padding: 5px 10px;
   border-radius: 20px;
   border: 1px solid white;
+  margin-right: 50px;
+}
+
+.top-bar .btn:hover {
+  transform: scale(2);
 }
 
 .top-bar a.btn {
@@ -228,4 +233,160 @@ footer {
   bottom:0;
   left: 0;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .foot-left{
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-left .cover{
+  width: 20%;
+  height: 100%;
+}
+
+.foot-left .cover img{
+  width: 100%;
+  transform: translateY(22px);
+}
+
+.foot-left .title{
+  width: 35%;
+}
+
+.foot-left .title .name{
+  font-size: 10px;
+  color: #a3a3a3;
+}
+
+.foot-left .ico{
+}
+
+.foot-left .ico i{
+  font-size: 15px;
+  color: #a3a3a3;
+  padding-left: 10px;
+}
+
+footer .foot-center{
+  flex-grow: 2;
+  height: 100%;
+}
+
+.foot-center .button{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-center .button li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.foot-center .button li#special{
+  padding: 0;
+}
+
+.foot-center .button #special{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+.foot-center .button #player{
+  font-size: 30px;
+}
+
+.foot-center .button #player:hover{
+  font-size: 32px;
+}
+
+.foot-center .button i{
+  color: white;
+  font-size: 16px;
+}
+
+.foot-center .time-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-bar .time,
+.time-bar .total-time{
+  width: 10%;
+  text-align: center;
+  margin: 0 10px;
+  color: white;
+}
+
+.time-bar .bar{
+  width: 70%;
+  position: relative;
+  cursor: pointer;
+}
+
+.bar .total-bar{
+  width: 100%;
+  border: 3px solid #a3a3a3;
+  border-radius: 5px;
+}
+
+.bar .now-bar{
+  width: 9%;
+  border: 3px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer .foot-right{
+  height: 100%;
+  width: 230px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-right i{
+  color: white;
+  font-size: 15px;
+}
+
+.foot-right i:last-of-type{
+  margin-right: 10px;
+}
+
+.foot-right .audio{
+  width: 60%;
+}
+
+.foot-right .audio .audio-bar{
+  position: relative;
+  width: 60%;
+  display: inline-block;
+}
+
+.foot-right .audio .audio-max{
+  width: 100%;
+  border: 3px solid #a3a3a3;
+  border-radius: 5px;
+}
+
+.audio .audio-bar .audio-now{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  border: 3px solid white;
+  border-radius: 5px;
 }
