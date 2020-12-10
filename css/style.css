@@ -644,3 +644,14 @@ footer .foot-right{
   }
 
 }
+
+@media screen and (max-height:350px) {
+
+  .top-bar{
+    display: none;
+  }
+
+  .main-content {
+    padding-top: 0px;
+  }
+}
