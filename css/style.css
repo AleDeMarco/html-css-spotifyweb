@@ -618,13 +618,17 @@ footer .foot-right{
   .nav-page,
   .main-playlist,
   .main-scroll,
-  .nav-bottom{
+  .nav-bottom,
+  .foot-left .title,
+  .audio,
+  .foot-left .ico{
     display: none;
   }
 
   .nav-logo-sx,
   .nav-page-sx,
-  .nav-bottom-sx{
+  .nav-bottom-sx,
+  .audio-xs{
     display: block;
   }
 
@@ -643,6 +647,26 @@ footer .foot-right{
     width: calc(100% / 2 - 10px);
   }
 
+  footer .foot-right {
+    width: 5%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  footer .foot-left {
+    width: 90px;
+  }
+
+  .foot-left .cover {
+    width: 100%;
+    height: 100%;
+  }
+
+  .foot-left .cover img {
+    width: 100%;
+    transform: translateY(0px);
+  }
+  
 }
 
 @media screen and (max-height:350px) {
